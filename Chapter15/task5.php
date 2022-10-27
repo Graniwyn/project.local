@@ -9,3 +9,4 @@ function math($x)
 $a = math(0);
 $a = math(0.5);
 $a = math(0.7);
+echo $a;

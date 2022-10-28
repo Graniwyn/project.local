@@ -10,8 +10,6 @@ for ($i = 0; $data = fgetcsv($f, 0, ";"); $i++) {
         $data[2] = strval($data[2]);
         $temp = 1;
     }
-    //$num = count($data);
-    //for ($c = 0; $c < $num; $c++)
     echo "IP: ", $data[0], " ", "DATE: ", $data[1], " ", "Count: ", $data[2], "<br />";
     $tempArray[] = $data;
 }

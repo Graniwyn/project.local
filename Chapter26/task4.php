@@ -20,6 +20,6 @@ try {
     $a->factorial(3);
 } catch (RecursionException $e) {
     echo get_class($e), "<br>";
-    echo $e, "<br>";
+    echo $e->getTraceAsString(), "<br>";
     echo $e->getFile() . " " . $e->getLine();
 }

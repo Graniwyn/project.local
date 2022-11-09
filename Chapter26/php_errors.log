@@ -1,0 +1,3 @@
+[09-Nov-2022 10:20:55 Europe/Moscow] PHP Warning:  Undefined variable $i in /home/graniwyn/projects/project.local/Chapter26/task1.php on line 104
+[09-Nov-2022 10:20:55 Europe/Moscow] PHP Stack trace:
+[09-Nov-2022 10:20:55 Europe/Moscow] PHP   1. {main}() /home/graniwyn/projects/project.local/Chapter26/task1.php:0

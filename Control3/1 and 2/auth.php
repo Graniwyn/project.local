@@ -2,6 +2,7 @@
 require_once('users.php');
 session_start();
 $cUsers = new Users;
+var_dump($_SESSION);
 if (isset($_SESSION['userid']))
     echo "Вы успешно авторизованы";
 else

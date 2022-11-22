@@ -1,7 +1,7 @@
 <?php
 if (isset($_FILES['file']))
 {
-    $destinationName = "/home/graniwyn/projects/project.local/Chapter47/test_vdita_file." . pathinfo($_FILES['file']['full_path'], PATHINFO_EXTENSION);
+    $destinationName = __DIR__ . "/test_vdita_file." . pathinfo($_FILES['file']['full_path'], PATHINFO_EXTENSION);
     move_uploaded_file($_FILES['file']['tmp_name'], $destinationName);
 }
 ?>

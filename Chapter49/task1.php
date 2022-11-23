@@ -1,7 +1,5 @@
 <?php
-//$splitString = str_split($someString = '404131131404789061061789');
 $numbersArray = [['404', '131'], ['789', '061']];
-//foreach ($splitString as $char)
 ob_start();
 function printNumber($iNumber)
 {

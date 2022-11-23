@@ -2,8 +2,6 @@
 require_once('reviews.php');
 $cReviews = new Reviews;
 $countOfPages = $cReviews->countOfPages();
-//var_dump($_SERVER);
-//var_dump($_POST);
 if (!isset($_GET['page']) or $_GET['page'] === '1')
     $reviews = $cReviews->limitedReviews('3', '0');
 else

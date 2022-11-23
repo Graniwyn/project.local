@@ -27,10 +27,8 @@ if (doHardWorkBySteps($_SESSION['counter']))
 else
 {
     $_SESSION['counter']++;
-    //header("Status: 200 OK");
     $dir = dirname($_SERVER['SCRIPT_NAME']);
     if ($dir == '\\') $dir = '';
-    //var_dump($dir . "/task2(2).php");
     header("Location: {$dir}/task2(2).php");
     exit;
 }

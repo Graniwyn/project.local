@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>
+    <button id="showCounter">Показать значение счётчика</button>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("li").on("click", counter)
+        $("#showCounter").on("click", show)
+      })
+      function counter() {
+        let element = $(this)[0]
+        if (element.hasOwnProperty("clickCounter")) element.clickCounter++
+        else element.clickCounter = 1
+      }
+      function show() {
+        let element = $("li")
+        let finalString = ""
+        for (let i = 0; i < element.length; i++) {
+          finalString += element[i].innerText + " " + element[i]["clickCounter"] + "\n"
+        }
+        alert(finalString)
+      }
+    </script>
+  </body>
+</html>

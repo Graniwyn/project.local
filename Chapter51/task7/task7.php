@@ -40,8 +40,7 @@ $catalog = new Catalogs;
     <input type="text"></input>
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script type="text/javascript" src="functions.js">
-  </script>
+  <script type="text/javascript" src="functions.js"></script>
 </body>
 
 </html>

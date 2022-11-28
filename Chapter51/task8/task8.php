@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
 <? } ?>
 <? for ($count = 1; $count <= $countOfPages; $count++)
 { ?>
-    <a href="task1.php?page=<?= $count ?>"><?= $count ?></a>
+    <a href="task8.php?page=<?= $count ?>"><?= $count ?></a>
 <? } ?>
 <html lang="en">
 
@@ -37,34 +37,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
 </head>
 
 <body>
-    <form action="task1.php" method="POST">
-        Имя <input type="text" name="name">
+    <form id="reviewsForm" action="task8.php" method="POST">
+        Имя <input type="text" id="name" name="name">
         <br>
-        Email <input type="text" name="email">
+        Email <input type="text" id="email" name="email">
         <br>
-        Должность <input type="text" name="position">
+        Должность <input type="text" id="position" name="position">
         <br>
         Отзыв
         <br>
-        <textarea name='review' rows='10' cols='40'></textarea>
+        <textarea name='review' id="review" rows='10' cols='40'></textarea>
         <br>
-        <input type="submit" value="Отправить">
+        <input type="submit" id="send" value="Отправить">
     </form>
-    <button id="hide">Скрыть/отобразить</button>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $("#hide").on("click", hide)
-        })
-
-        function hide() {
-            if ($("form").is(":visible"))
-                $("form").hide();
-            else
-                $("form").show();
-
-        }
-    </script>
+    <script type="text/javascript" src="functions.js"></script>
 </body>
 
 </html>

@@ -22,7 +22,6 @@
       })
       function counter() {
         let element = $(this)[0]
-        console.log(element.hasAttribute("data-click-counter"))
         if (element.hasAttribute("data-click-counter")) element.dataset.clickCounter++
         else element.dataset.clickCounter = 1
       }

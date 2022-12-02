@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     exit();
 }
 ?>
-<? foreach ($reviews as $review)
+<?php foreach ($reviews as $review)
 { ?>
     <h1><?= $review['name'] ?></h1>
     <?= $review['position'] ?>
@@ -22,11 +22,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     <blockquote>
         <p><?= $review['review_text'] ?></p>
     </blockquote>
-<? } ?>
-<? for ($count = 1; $count <= $countOfPages; $count++)
+<?php } ?>
+<?php for ($count = 1; $count <= $countOfPages; $count++)
 { ?>
     <a href="task3.php?page=<?= $count ?>"><?= $count ?></a>
-<? } ?>
+<?php } ?>
 <html lang="en">
 
 <head>
